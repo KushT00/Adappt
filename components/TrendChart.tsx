@@ -97,7 +97,7 @@ const TrendChart = () => {
             
             return (
               <motion.g key={i}>
-                <circle
+                <motion.circle
                   cx={x}
                   cy={y}
                   r="6"
@@ -106,7 +106,7 @@ const TrendChart = () => {
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.3, delay: i * 0.1 }}
                 />
-                <circle
+                <motion.circle
                   cx={x}
                   cy={y}
                   r="3"
